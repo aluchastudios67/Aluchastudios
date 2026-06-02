@@ -1,5 +1,6 @@
+"use client";
+
 import { useEffect, useState } from "react";
-import videoSrc from "@/assets/aluchvid.mp4";
 
 export function HeroVideo() {
   const [scrollY, setScrollY] = useState(0);
@@ -63,7 +64,7 @@ export function HeroVideo() {
         <div className="absolute inset-0 bg-gradient-to-tr from-alucha/10 via-transparent to-alucha-deep/10 pointer-events-none z-10" />
 
         <video
-          src={videoSrc}
+          src="/aluchvid.mp4"
           autoPlay
           muted
           loop
